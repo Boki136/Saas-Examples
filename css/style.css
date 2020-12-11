@@ -4,7 +4,8 @@
 
 nav {
   margin: 30px;
-  background-color: #f9ed69; }
+  background-color: #f9ed69;
+  line-height: 50px; }
   nav::after {
     content: "";
     clear: both;
@@ -12,8 +13,7 @@ nav {
 
 .navigation {
   list-style: none;
-  float: left;
-  background: red; }
+  float: left; }
   .navigation li {
     display: inline-block;
     margin-left: 30px; }
@@ -25,7 +25,8 @@ nav {
       text-transform: uppercase; }
 
 .buttons {
-  float: right; }
+  float: right;
+  vertical-align: center; }
 
 .btn-main:link,
 .btn-hot:link {
@@ -48,3 +49,18 @@ nav {
 
 .btn-hot:hover {
   background-color: #7e2840; }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  height: auto; }
+  .container div {
+    width: 30%;
+    background: #b3b3b3;
+    transition: all 0.2s ease-in-out; }
+    .container div:hover {
+      transform: scale(1.05); }
+  .container p {
+    padding: 10%;
+    color: #eee;
+    text-align: center; }

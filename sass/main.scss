@@ -10,12 +10,12 @@ $color-tertiary: #b83b5e; // pink color
 $color-text-dark: #333;
 $width-button: 150px;
 $color-text-white: #eee;
-
-$color-red: red;
+$color-bacground-grey: grey;
 
 nav {
   margin: 30px;
   background-color: $color-primary;
+  line-height: 50px;
 
   &::after {
     content: "";
@@ -27,7 +27,7 @@ nav {
 .navigation {
   list-style: none;
   float: left;
-  background: $color-red;
+
 
   li {
     display: inline-block;
@@ -47,6 +47,7 @@ nav {
 
 .buttons {
   float: right;
+  vertical-align: center;
 }
 
 .btn-main:link,
@@ -78,4 +79,30 @@ nav {
   &:hover {
     background-color: darken($color-tertiary, 15%);
   }
+}
+
+.container {
+
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+
+    div {
+        width: 30%;
+        background: lighten($color-bacground-grey, 20%);
+        transition: all 0.2s ease-in-out;
+
+
+    &:hover {
+        transform: scale(1.05);
+        }
+    
+    }
+
+    p {
+        padding: 10%;
+        color: $color-text-white;
+        text-align: center;
+    }
+
 }
